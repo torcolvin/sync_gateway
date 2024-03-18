@@ -10,7 +10,11 @@ version: 2
 updates:
   - package-ecosystem: "gomod"
     directory: "/"
-    ignore:
-    - dependency-name: github.com/couchbaselabs/go-fleecedelta
     schedule:
       interval: "weekly"
+registries:
+  gh-private: # Define access for a private registry
+    type: git
+    url: https://github.com
+    username: cb-robot-sg
+    password: ${{secrets.jenkins_sgwdev_access_token}}
