@@ -12,6 +12,8 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    registries:
+       - gh-private
 registries:
   gh-private: # Define access for a private registry
     type: git
