@@ -11,6 +11,6 @@ updates:
   - package-ecosystem: "gomod"
     directory: "/"
     ignore:
-    - dependency-name: github.com/couchbaselabs/go-fleecedelta
+      - dependency-name: github.com/couchbaselabs/go-fleecedelta
     schedule:
       interval: "weekly"
